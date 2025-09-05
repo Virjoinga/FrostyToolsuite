@@ -38,4 +38,14 @@
       <None Update="Sdk\*.dll" CopyToOutputDirectory="PreserveNewest" />
       <None Update="Profiles\*.json" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Update="Views\PropertyGridView.axaml.cs">
+        <DependentUpon>PropertyGridView.axaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\ProfileLoadingView.axaml.cs">
+        <DependentUpon>ProfileLoadingView.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
 </Project>

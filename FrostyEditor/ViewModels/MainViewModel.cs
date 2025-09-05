@@ -17,6 +17,9 @@ public partial class MainViewModel : ViewModelBase
     [ObservableProperty]
     private LoggerViewModel m_logger = new();
 
+    [ObservableProperty]
+    private PropertyGridViewModel m_propertyGrid = new();
+
     public ObservableCollection<DocumentModel> Documents { get; } = new();
 
     public MainViewModel()

@@ -169,6 +169,12 @@ public partial class ProfileSelectViewModel : WindowViewModel
                     CloseWindow?.Invoke();
                 }
             }
+            else
+            {
+                // show loading screen while frosty is loading
+                ViewWindow ProfileLoadingWindow = ViewWindow.Create(out ProfileLoadingViewModel penis);
+                ProfileLoadingWindow.ShowDialog(desktopLifetime.MainWindow!);
+            }
 
             if (await SetupFrostySdk())
             {

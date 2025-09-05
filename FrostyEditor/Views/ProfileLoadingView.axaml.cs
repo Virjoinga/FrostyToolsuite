@@ -4,11 +4,10 @@ using Avalonia.Markup.Xaml;
 
 namespace FrostyEditor.Views;
 
-public partial class ProfileSelectView : UserControl
+public partial class ProfileLoadingView : UserControl
 {
-    public ProfileSelectView()
+    public ProfileLoadingView()
     {
         InitializeComponent();
-
     }
 }
